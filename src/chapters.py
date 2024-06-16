@@ -9,6 +9,7 @@ from src.download import download
 SKIP_CHAPTER = "https://file.tokybook.com/upload/welcome-you-to-tokybook.mp3"
 MEDIA_URL = "https://files01.tokybook.com/audio/"
 MEDIA_FALLBACK_URL = "https://files02.tokybook.com/audio/"
+SLASH_REPLACE_STRING = " out of "
 
 def get_chapters(BOOK_URL):
     html = get(BOOK_URL)
@@ -45,7 +46,7 @@ def get_chapters(BOOK_URL):
         try:
             download(
                 MEDIA_URL + item["url"],
-                path.join(download_folder, item["name"] + ".mp3"),
+                path.join(download_folder, SLASH_REPLACE_STRING.join(item["name"].split("/")) + ".mp3"),
             )
             print()
 
