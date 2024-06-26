@@ -5,3 +5,4 @@ requests==2.27.1
 tqdm==4.64.0
 urllib3==1.26.8
 questionary==2.0.1
+pick==2.3.2

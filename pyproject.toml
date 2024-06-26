@@ -1,0 +1,28 @@
+[project]
+name = "tokysnatcher"
+version = "0.1"
+description = "A simple audiobook downloader for tokybook.com"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "gazpacho==1.1",
+  "halo==0.0.31",
+  "json5==0.9.10",
+  "requests==2.27.1",
+  "tqdm==4.64.0",
+  "urllib3==1.26.8",
+  "questionary==2.0.1",
+  "pick==2.3.2",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rahaaatul/TokySnatcher"
+"Bug Tracker" = "https://github.com/rahaaatul/TokySnatcher/issues"
+
+[project.scripts]
+tokysnatcher = 'tokysnatcher.__main__:main'

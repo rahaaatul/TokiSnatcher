@@ -1,6 +1,7 @@
 from functools import partial
 from pathlib import Path
 from shutil import copyfileobj
+
 from requests import get
 from tqdm.auto import tqdm
 

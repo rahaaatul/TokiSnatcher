@@ -1,7 +1,8 @@
-from gazpacho import get, Soup
-from pick import pick
-from halo import Halo
 from urllib.parse import quote
+
+from gazpacho import Soup, get
+from halo import Halo
+from pick import pick
 
 
 def search_book():

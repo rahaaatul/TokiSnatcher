@@ -3,17 +3,13 @@
 
 
 ## Installation
-1. Go to desired clone directory, then run:
+1. Open terminal, then run:
 ```sh
-git clone https://github.com/rahaaatul/TokySnatcher.git
+pip install git+https://github.com/rahaaatul/TokySnatcher.git
 ```
-2. Open terminal in TokySnatcher directory, then run:
+2. Run TokySnatcher
 ```sh
-pip install -r requirements.txt
-```
-3. Run TokySnatcher
-```sh
-py main.py
+tokysnatcher
 ```
 
 
